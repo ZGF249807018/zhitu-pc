@@ -1,0 +1,208 @@
+#app {
+  // 主体区域
+  .el-submenu__icon-arrow{
+    right: 50px;
+  }
+  .main-container {
+    min-height: 100%;
+    transition: margin-left .28s;
+    margin-left: 216px;
+    position: relative;
+  }
+  .el-submenu__title{
+    padding-left: 50px !important;
+  }
+.el-submenu__title:hover,.el-menu-item:hover{
+  background-color: $menuHover !important;
+}
+  .el-menu-item{
+    padding-left: 50px !important;
+  }
+  .menu-wrapper a{
+    width: 100%;
+  }
+
+  // 侧边栏
+  .el-scrollbar__wrap{
+    padding-bottom: 50px;
+  }
+  .sidebar-container {
+    .icon{
+      color: $menuIconColor;
+      right: 4px;
+      position: relative;
+    }
+    -webkit-transition: width 0.28s;
+    transition: width 0.28s;
+    width: 216px !important;
+    height: 100%;
+    position: fixed;
+    top:73px;
+    left: 0;
+    bottom: 0;
+    z-index: 1001;
+    background: $menuBg;
+    //overflow: hidden;
+    //reset element-ui css
+    .horizontal-collapse-transition {
+      transition: 0s width ease-in-out, 0s padding-left ease-in-out, 0s padding-right ease-in-out;
+    }
+    .scrollbar-wrapper {
+      //height: calc(100% + 90px);
+      .el-scrollbar__view {
+        height: 100%;
+      }
+    }
+    .is-horizontal {
+      display: none;
+    }
+    .is-active{
+      background-color:$menuActive !important;
+      color: $textActive !important;
+      &.hamburger{
+        background-color: transparent !important;
+      }
+    }
+    a {
+      display: inline-block;
+      overflow: hidden;
+    }
+    .svg-icon {
+      margin-right: 16px;
+    }
+    .el-menu {
+      border: none;
+      height: calc(100% - 10%);
+      width: 100% !important;
+      overflow-y: auto;
+      @include scrollBar
+    }
+  }
+  .hideSidebar {
+    .sidebar-container {
+      width: 123px !important;
+    }
+    .main-container {
+      margin-left: $miniMenuWidth;
+    }
+    .submenu-title-noDropdown {
+      padding-left: 10px !important;
+      position: relative;
+      text-indent: 2rem;
+      .el-tooltip {
+        padding: 0 10px !important;
+      }
+    }
+
+    .is-opened > div{
+      color: #fff !important;
+    }
+    .el-submenu {
+      overflow: hidden;
+      text-align: center;
+      transition: all 4s ease-in;
+
+      .icon-beitiao{
+        left: -4px;
+      }
+      &>.el-submenu__title {
+        padding-left: 10px !important;
+        .el-submenu__icon-arrow {
+          display: none;
+        }
+      }
+    }
+    .el-menu--collapse {
+      .el-submenu {
+        &>.el-submenu__title {
+          &>span {
+            height: 0;
+            width: 0;
+            overflow: hidden;
+            visibility: hidden;
+            display: inline-block;
+          }
+        }
+      }
+    }
+  }
+  .sidebar-container .nest-menu .el-submenu>.el-submenu__title,
+  .sidebar-container .el-submenu .el-menu-item {
+    min-width: 180px !important;
+    //background-color: $subMenuBg; //左边导航栏颜色
+    &:hover {
+      background-color: $menuHover !important;
+      color:$textHover !important;
+    }
+  }
+  .el-menu--collapse .el-menu .el-submenu {
+    min-width: 180px !important;
+  }
+  .el-menu-item span{
+    font-size: 14px;
+  }
+  .el-submenu__title{
+    font-size: 16px;
+    color:$menuIconColor;
+  }
+  //适配移动端
+  .mobile {
+    .hamburger-container{
+      display: none !important;
+    }
+    //.main-container {
+    //  margin-left: 0px;
+    //}
+    //.sidebar-container {
+    //  transition: transform .28s;
+    //  width: auto !important;
+    //}
+    //&.hideSidebar {
+    //  .sidebar-container {
+    //    transition-duration: 0.3s;
+    //    transform: translate3d(-180px, 0, 0);
+    //  }
+    //}
+  }
+  .withoutAnimation {
+    .main-container,
+    .sidebar-container {
+      transition: none;
+    }
+  }
+  .menu-head{
+    .el-col{
+      background:$subMenuBg;
+      height: 48px;
+      line-height: 48px;
+      text-align: center;
+      span{
+        color: #fff;
+        display: inline-block;
+        padding-right: 30px;
+      }
+      .hamburger-container{
+        display: inline-block;
+        padding-right: 20px;
+        position: absolute;
+        top: 3px;
+        right: 0px;
+      }
+      img{
+        width: 52px;
+        height: 52px;
+        padding: 5px;
+        border-radius: 50%;
+      }
+      .menu-head-name{
+        min-height: 40px;
+        font-size: 14px;
+        color: $logoColor;
+        overflow: hidden;
+        text-overflow: ellipsis;
+        white-space: nowrap;
+        padding: 20px;
+      }
+    }
+  }
+}

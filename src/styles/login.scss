@@ -1,0 +1,174 @@
+
+$bg:#2d3a4b;
+$bg_img:url('../assets/images/bg_image.jpg');
+$dark_gray:#889aa4;
+$light_gray:#283041;
+$link_text_color:#ecf2f7;
+$input_width:331px;
+$left_width:50%;
+$right_width:50%;
+$input_height:38px;
+.login-bg{
+  position: fixed;
+  height: 100%;
+  width: 100%;
+  background-color: $bg;
+  background-image: $bg_img;
+  background-repeat: no-repeat;
+  -webkit-background-size: cover;
+  background-size: cover;
+  overflow-y: auto;
+}
+
+.login-container {
+  .el-form-item__content{
+    line-height: 30px;
+    display: flex;
+  }
+  .el-form-item__error{
+    left: 82px;
+    padding-top: 8px;
+  }
+  .back-password{
+    width: $input_width;
+    margin: auto;
+    display: block;
+    height: $input_height;
+    .el-form-item__content{
+      color: #30a5ff;
+    }
+  }
+  .login-btn{
+    width: $input_width;
+    margin: 20px auto 30px auto;
+  }
+  .register{
+    margin: 0 auto;
+    width: $input_width;
+    .register-btn{
+      color: #30a5ff;
+    }
+
+  }
+  .el-input {
+    height: $input_height;
+    width: $input_width;
+    margin: auto;
+    input {
+      background: #fff;
+      color: $textColor2;
+      -webkit-appearance: none;
+      height: $input_height;
+      &:-webkit-autofill {
+        -webkit-box-shadow: 0 0 0px 1000px $bg inset !important;
+        -webkit-text-fill-color: #fff !important;
+      }
+    }
+  }
+  .el-form-item {
+    margin-bottom: 28px;
+    border-radius: 5px;
+    color: #454545;
+  }
+  a{
+    color: $textColorOpacity;
+    font-size: 14px;
+  }
+  .link{
+    font-size: 16px;
+    letter-spacing: 5px;
+  }
+  .login-form {
+    display: flex;
+   margin: auto;
+    width: 980px;
+    border-radius: 5px;
+    overflow-y: auto;
+
+  }
+  .left{
+    width:$left_width;
+    background: #2961e9;
+    img{
+      max-width: 100%;
+      max-height: 100%;
+      //height: auto;
+    }
+    .tip{
+      width: 100%;
+      height: 100px;
+      background: #e59a13;
+      color: #fff;
+      text-align: center;
+      line-height: 100px;
+    }
+  }
+  .right{
+    width: $right_width;
+    height: auto;
+    background: #fff;
+    padding: 30px 0;
+  }
+  .tips {
+    font-size: 14px;
+    color: #fff;
+    margin-bottom: 10px;
+    span {
+      &:first-of-type {
+        margin-right: 16px;
+      }
+    }
+  }
+  .svg-container {
+    padding: 6px 5px 6px 15px;
+    color: $dark_gray;
+    vertical-align: middle;
+    width: 30px;
+    display: inline-block;
+    &_login {
+      font-size: 20px;
+    }
+  }
+  .title {
+    font-size: 38px;
+    line-height: 3;
+    color: $linkColor;
+    margin: 22px auto;
+    text-align: center;
+    font-weight: normal;
+  }
+  .show-pwd {
+    position: absolute;
+    right: 10px;
+    top: 7px;
+    font-size: 16px;
+    color: $dark_gray;
+    cursor: pointer;
+    user-select: none;
+  }
+  .back-password-btn,.register-btn{
+    cursor: pointer;
+  }
+  .brs{
+    border-radius: 20px;
+  }
+  .di{
+    display: inline-block;
+  }
+  button{
+    width: $input_width;
+    margin: auto;
+    display: block;
+    font-size: 16px;
+  }
+}
+.register-container {
+  .el-form-item__error{
+    left: 250px !important;
+  }
+}
+.modify-box{
+  .el-form-item__error{
+    left: 0 !important;
+  }
+}
