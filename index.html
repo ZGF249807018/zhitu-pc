@@ -1,4 +1,5 @@
 <!DOCTYPE html>
+<!-- <html xmlns:wb="http://open.weibo.com/wb"> -->
 <html>
 <head>
   <meta charset="utf-8">
@@ -16,6 +17,7 @@
   <link href="https://cdn.bootcss.com/normalize/8.0.0/normalize.min.css" rel="stylesheet">
   <link href="https://cdn.bootcss.com/element-ui/2.3.4/theme-chalk/index.css" rel="stylesheet">
   <title>职兔背调</title>
+  <!-- <script src="https://tjs.sjs.sinajs.cn/open/api/js/wb.js?appkey=2840326567" type="text/javascript" charset="utf-8"></script> -->
   <!--[if IE 8]>
   <style>.ie-test-bar{display:none;height:24px;line-height:1.8;font-weight:normal;text-align:center;border:1px solid #fce4b5;background-color:#ffff9b;color:#e27839;position:relative;font-size:12px;margin:5px 0 0 0;padding:5px 0 2px 0}.ie-test-bar a{text-decoration:none;color:#08c;background-repeat:none}.ie-test-bar a#ie-upgrade,.ie-test-bar a#ie-setup-360{padding:0 0 2px 2px;*+padding-top:2px;*_padding-top:2px;background-repeat:no-repeat;background-position:0 0}.ie-test-bar a:hover{text-decoration:underline}</style>
   <div id="ie-test-bar" class="ie-test-bar">您现在使用的浏览器版本过低，可能会导致部分图片和信息的缺失。请下载使用 <a href="https://browser.360.cn/se/" id="ie-setup-360" target="_blank" title="360浏览器">360浏览器</a></div>
@@ -50,7 +52,9 @@
   <![endif]-->
 </head>
 <body>
-<div id="app"></div>
+<!-- <wb:login-button type="3,2" onlogin="login" onlogout="logout" class="web-login">登录按钮</wb:login-button> -->
+<div id="app">
+</div>
 <script src="https://cdn.bootcss.com/vue/2.5.10/vue.min.js"></script>
 <script src="https://cdn.bootcss.com/vuex/3.0.1/vuex.min.js"></script>
 <script src="https://cdn.bootcss.com/vue-router/3.0.1/vue-router.min.js"></script>
@@ -59,4 +63,11 @@
 <script src="https://cdn.bootcss.com/axios/0.17.1/axios.min.js"></script>
 <script src="static/qrcode.min.js"></script>
 </body>
+<style>
+  .web-login{
+    position: absolute;
+    top: 40px;
+    right: 50px;
+  }
+</style>
 </html>

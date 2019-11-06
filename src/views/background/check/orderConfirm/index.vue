@@ -72,8 +72,7 @@
   import { checkInputPayPass } from '@/utils/check/index'
   import { orderInfo, consume } from '@/api/resumeForm'
   import { getWithOrder, getCouponWithOrder, importOrders } from '@/api/order'
-  import { pkgDetails } from '@/api/package'
-  import { itemList} from '@/api/package'
+  import { pkgDetails, itemList } from '@/api/report'
   import { userDetail } from '@/api/info'
   import Back from '@/components/Back/index'
   export default {

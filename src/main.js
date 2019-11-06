@@ -1,4 +1,4 @@
-// import Vue from 'vue'
+import Vue from 'vue'
 // import 'normalize.css/normalize.css'// A modern alternative to CSS resets
 import moment from 'moment/moment'
 // import ElementUI from 'element-ui'
@@ -8,6 +8,7 @@ import '@/styles/index.scss' // global css
 import App from './App'
 import router from './router'
 import store from './store'
+import BaiduMap from 'vue-baidu-map'
 import '@/icons' // icon
 import '@/permission' // permission control
 // import $ from 'jquery'
@@ -80,6 +81,10 @@ Vue.filter('decimalNum', function(value) {
 Vue.filter('decimalNum2', function(value) {
   value = Number(value) / 100
   return value.toFixed(2)
+})
+Vue.use(BaiduMap, {
+  /* Visit http://lbsyun.baidu.com/apiconsole/key for details about app key. */
+  ak: 'SyeuR6eFipsOOhRIombtW1GVGVZGc8Gt'
 })
 const debugTools = process.env.NODE_ENV !== 'production'
 Vue.config.debug = debugTools

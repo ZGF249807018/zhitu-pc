@@ -86,7 +86,7 @@
 
 <script>
   import { mapGetters } from 'vuex'
-  import { childList } from '@/api/package'
+  import { childList } from '@/api/report'
   import { addCustom } from '@/api/resumeForm'
   import Back from '@/components/Back/index'
   export default {

@@ -317,7 +317,7 @@
           }
           axios.post(addLogo, fd, config).then(res => {
             console.log(res)
-            this.$store.commit('SET_AUTOGRAPHURL', res.data.data.url)
+            this.$store.commit('SET_AUTOGRAPHURL', res.data.data.imgUrl)
           }).catch(res => {
             console.log(res)
           })

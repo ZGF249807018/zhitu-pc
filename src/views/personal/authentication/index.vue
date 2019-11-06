@@ -98,11 +98,8 @@
       toggleShow() {
         this.show = !this.show
       },
-      cropSuccess(imgDataUrl, field) {
-        this.imgDataUrl = imgDataUrl
-      },
       cropUploadSuccess(jsonData, field) {
-        this.imgDataUrl = process.env.IMG_API + jsonData.data.url
+        this.imgDataUrl = process.env.IMG_API + jsonData.data.imgUrl
         this.authForm.businessLic = jsonData.data.url
         this.show = !this.show
         Message.success('头像修改成功')

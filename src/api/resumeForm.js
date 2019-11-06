@@ -9,7 +9,7 @@ export function interviewSubmit(obj) { return request({ url: api.orderApi + '/v1
 export function candidateAdd(obj) { return request({ url: api.orderApi + '/v1/candidate/add', method: 'post', data: obj }) }
 
 // 添加自定义套餐
-export function addCustom(tenantId, userId, name, groupCodeList, resumeCount, perfermanceCount) { return request({ url: api.package + '/v1/pkg/addCustom', method: 'post', data: { tenantId, userId, name, groupCodeList, resumeCount, perfermanceCount }}) }
+export function addCustom(tenantId, userId, name, groupCodeList, resumeCount, perfermanceCount) { return request({ url: api.report + '/v1/pkg/addCustom', method: 'post', data: { tenantId, userId, name, groupCodeList, resumeCount, perfermanceCount }}) }
 
 export function orderInfo(tenantId, userId, packageId, candidateIdList) { return request({ url: api.orderApi + '/v1/order/create', method: 'post', data: { tenantId, userId, packageId, candidateIdList }}) }
 

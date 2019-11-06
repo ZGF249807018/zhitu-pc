@@ -28,7 +28,7 @@
           </el-form>
           <el-button type="primary"  class="next brs"  @click="next">下一步</el-button>
           <div class="ft">
-            已经有账号？<router-link to="/" class="link">马上登录</router-link>
+            已经有账号？<router-link to="/login" class="link">马上登录</router-link>
           </div>
         </div>
         <div v-if="isNext && !completeRegister">

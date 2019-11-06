@@ -4,13 +4,13 @@ import request from '@/utils/request'
 export function updateLogo(logo, id) { return request({ url: api.tenant + '/v1/tenant/updateLogo', method: 'post', data: { logo, id }}) }
 
 // 上传图片
-export const addLogo = process.env.BASE_API + api.package + '/file/upload'
+export const addLogo = process.env.BASE_API + api.report + '/file/upload'
 
 // 上传execl
-export const addExecl = process.env.BASE_API + api.package + '/candidate/batchUpload'
+export const addExecl = process.env.BASE_API + api.report + '/candidate/batchUpload'
 
 // 上传签名图片
-export function updateName(file) { return request({ url: api.package + '/file/upload', method: 'post', data: { file }}) }
+export function updateName(file) { return request({ url: api.report + '/file/upload', method: 'post', data: { file }}) }
 // 设置支付密码
 export function setPassword(tenantId, mobile, payPassword, smsCode) { return request({ url: api.tenant + '/v1/payPassword/set', method: 'post', data: { tenantId, mobile, payPassword, smsCode }}) }
 

@@ -118,7 +118,7 @@
       cropUploadSuccess(jsonData, field) {
         console.log('-------- upload success --------')
         console.log(jsonData)
-        this.imgDataUrl = process.env.IMG_API + jsonData.data.url
+        this.imgDataUrl = process.env.IMG_API + jsonData.data.imgUrl
         this.show = !this.show
         Message.success('头像修改成功')
         console.log('field: ' + field)

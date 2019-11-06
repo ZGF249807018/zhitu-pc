@@ -9,16 +9,6 @@ import Layout from '../views/layout/Layout'
 import Login from '../views/login/Login'
 import Register from '../views/login/Register'
 import Backpwd from '../views/login/Backpwd'
-/**
-* hidden: true                   侧边栏隐藏( 默认 false)
-* alwaysShow: true               菜单显示
-* redirect: noredirect           面包屑地址
-* name:'router-name'             路由名称
-* meta : {
-    title: 'title'               侧边栏名称
-    icon: 'svg-name'             侧边栏icon,
-  }
-**/
 
 export const constantRouterMap = [
   { path: '/login', component: Login, name: 'Login' },
@@ -36,7 +26,10 @@ export const constantRouterMap = [
   { path: '/wrote', component: () => import('@/views/wrote'), hidden: true },
   { path: '/agreement', component: () => import('@/views/agreement'), hidden: true },
   { path: '/test', component: () => import('@/views/test'), hidden: true },
-  { path: '/home', component: () => import('@/views/home'), hidden: true },
+  { path: '/product', component: () => import('@/views/website/product'), hidden: true },
+  { path: '/about', component: () => import('@/views/website/about'), hidden: true },
+  { path: '/develop', component: () => import('@/views/website/develop'), hidden: true },
+  { path: '/home', component: () => import('@/views/website/home'), hidden: true },
   {
     path: '/reportDetails',
     component: () => import('@/views/reportDetails'),

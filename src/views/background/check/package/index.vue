@@ -97,7 +97,7 @@
 </template>
 <script>
   import { mapGetters } from 'vuex'
-  import { fixedList, itemList, customList, deleteCustom, pkgDetails } from '@/api/package'
+  import { fixedList, itemList, customList, deleteCustom, pkgDetails } from '@/api/report'
   import Qs from 'qs'
   import order from '../search/index'
   export default {

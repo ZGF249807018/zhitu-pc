@@ -499,14 +499,20 @@
         this.$router.push({ path: '/background/check' })
       },
       saveEdit() {
+        if(this.isSubmitViewForm){
+          return false
+        }
+        this.isSubmitViewForm = true
         this.$refs.checkForm.validate(valid => {
           if (valid) {
             createTasteReport(this.tid, this.uid, 107, this.checkForm.mobile, this.checkForm.name, this.checkForm.idCard).then((response) => {
               this.dialogVisible2 = false
               this.dialogVisible3 = true
+              this.isSubmitViewForm = false
               console.log(response)
             }).catch(error => {
               console.log(error)
+              this.isSubmitViewForm = false
               this.$message.error('姓名和身份证号不匹配')
             })
           }

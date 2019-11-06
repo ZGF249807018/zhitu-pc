@@ -542,7 +542,7 @@
               }
             }
             axios.post(addLogo, fd, config).then(res => {
-              this.$store.commit('SET_AUTOGRAPHURL', res.data.data.url)
+              this.$store.commit('SET_AUTOGRAPHURL', res.data.data.imgUrl)
               let submitForm = this.authInfo
               submitForm.authPicUrl = this.autographUrl
               submitForm.workParams = this.workParams

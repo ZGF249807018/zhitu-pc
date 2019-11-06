@@ -1,34 +1,34 @@
  <template>
   <div class="login-container login-bg loginBox">
       <top-bar></top-bar>
-        <el-form class="login-form" autoComplete="on" :model="loginForm" :rules="loginRules" ref="loginForm" label-position="left">
-          <div class="left">
-            <img src="../../assets/images/login-bg.jpg" alt="">
+      <el-form class="login-form" autoComplete="on" :model="loginForm" :rules="loginRules" ref="loginForm" label-position="left">
+        <div class="left">
+          <img src="../../assets/images/login-bg.jpg" alt="">
+        </div>
+        <div class="right">
+          <h3 class="title">登录</h3>
+          <el-form-item prop="username">
+            <el-input name="username" type="text" v-model="loginForm.username" autoComplete="off"   placeholder="请输入手机号/邮箱/账号ID"><template slot="prepend"><i class="icon iconfont input-icon icon-rencai"></i></template></el-input>
+          </el-form-item>
+          <el-form-item prop="password">
+            <el-input name="password"  @keyup.enter.native="handleLogin" v-model="loginForm.password" autoComplete="off" type="password" placeholder="密码"><template slot="prepend"><i class="icon iconfont input-icon icon-ai-password"></i></template></el-input>
+          </el-form-item>
+          <div class="back-password">
+            <div class="fl"><el-checkbox v-model="checked" ><span class="mini-text">记住密码</span></el-checkbox></div>
+            <div class="back-password-btn fr"> <router-link to="/backpwd"><span class="main-text">忘记密码？</span></router-link></div>
           </div>
-          <div class="right">
-            <h3 class="title">登录</h3>
-            <el-form-item prop="username">
-              <el-input name="username" type="text" v-model="loginForm.username" autoComplete="off"   placeholder="请输入手机号/邮箱/账号ID"><template slot="prepend"><i class="icon iconfont input-icon icon-rencai"></i></template></el-input>
-            </el-form-item>
-            <el-form-item prop="password">
-              <el-input name="password"  @keyup.enter.native="handleLogin" v-model="loginForm.password" autoComplete="off" type="password" placeholder="密码"><template slot="prepend"><i class="icon iconfont input-icon icon-ai-password"></i></template></el-input>
-            </el-form-item>
-            <div class="back-password">
-              <div class="fl"><el-checkbox v-model="checked" ><span class="mini-text">记住密码</span></el-checkbox></div>
-              <div class="back-password-btn fr"> <router-link to="/backpwd"><span class="main-text">忘记密码？</span></router-link></div>
+          <el-form-item class="login-btn">
+            <el-button type="primary"  :loading="loading" @click.native.prevent="handleLogin" class="brs">
+              登录
+            </el-button>
+          </el-form-item>
+          <el-form-item>
+            <div class="tc register">
+              <router-link to="/register" class="link">注册</router-link>
             </div>
-            <el-form-item class="login-btn">
-              <el-button type="primary"  :loading="loading" @click.native.prevent="handleLogin" class="brs">
-                登录
-              </el-button>
-            </el-form-item>
-            <el-form-item>
-              <div class="tc register">
-                <router-link to="/register" class="link">注册</router-link>
-              </div>
-            </el-form-item>
-          </div>
-        </el-form>
+          </el-form-item>
+        </div>
+      </el-form>
   </div>
 </template>
 
