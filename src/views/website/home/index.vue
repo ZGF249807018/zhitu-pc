@@ -34,7 +34,76 @@
     </div>
     <div class="home-industry">
       <p class="home-industry-title">匹配您的行业</p>
-      <img src="../img/industry-bg.png" />
+      <!-- <img src="../img/industry-bg.png" /> -->
+      <div class="industry-bg-list">
+        <div class="industry-img-box">
+          <img src="../img/industry-first-bg.png" class="industry-bg-img" />
+          <div class="industry-content-box">
+            <p class="industry-content-title">交通运输行业</p>
+            <p class="industry-content-text">交通运输行业客、货运安全的关键因素是司机，其驾驶行为将直接关系到货物或乘客的生命财产安全，通过历史重大交通事故数据分析，除超速、疲劳驾驶外、无证驾驶也是导致交通事故的重要原因之一，提供针对交通运输行业的背景核查方案。推荐项目：身份信息核实、驾驶证信息核查、驾驶员累计扣分查询、社会不良信息核查。</p>
+          </div>
+        </div>
+        <div class="industry-img-box">
+          <img src="../img/industry-two-bg.png" class="industry-bg-img" />
+          <div class="industry-content-box">
+            <p class="industry-content-title">家政行业</p>
+            <p class="industry-content-text">社会经济的发展，让保姆、月嫂、护理工、幼教等工种逐渐普及到普通家庭，用工安全尤为重要，根据该岗位需求，我们为家政行业制定了针对性的背景核实方案。推荐项目：身份信息核实、金融风险核查、社会不良信息核查。</p>
+          </div>
+        </div>
+        <div class="industry-img-box">
+          <img src="../img/industry-three-bg.png" class="industry-bg-img" />
+          <div class="industry-content-box">
+            <p class="industry-content-title">IT/互联网/高科技</p>
+            <p class="industry-content-text">TMT行业，对员工的专业能力、敬业精神具有更高的要求，同时确保信息安全、核心技术不被泄露至关重要。 推荐项目：身份信息核实、金融风险核查、社会不良信息核查、教育背景、法院失信被执行人信息、个人工商（投资、任职、法人）信息、工作履历核实、工作表现核实</p>
+          </div>
+        </div>
+      </div>
+      <div class="industry-bg-list">
+        <div class="industry-img-box">
+          <img src="../img/industry-four-bg.png" class="industry-bg-img" />
+          <div class="industry-content-box">
+            <p class="industry-content-title">金融行业</p>
+            <p class="industry-content-text">基于金融行业的监管需求和高风险属性，大部分工作岗位会受到严格管控，所以在背景核实中，对金融从业者的职业操守和专业性具有极高的要求，推荐项目：身份信息核实、金融风险核查、金融违规核查、社会不良信息核查、法院失信被执行人信息、教育背景、执业资格、个人工商（投资、任职、法人）信息、工作履历核实、工作表现核实</p>
+          </div>
+        </div>
+        <div class="industry-img-box">
+          <img src="../img/industry-five-bg.png" class="industry-bg-img" />
+          <div class="industry-content-box">
+            <p class="industry-content-title">医药/医疗/保健</p>
+            <p class="industry-content-text">近年随着社会经济体制的变化和医疗行业的发展， 医疗领域各专业人才市场的竞争日趋激烈、对医护人员等各专业人才提出了更高的要求，我们可针对不同专业人才做定制化的背景核查方案。</p>
+          </div>
+        </div>
+        <div class="industry-img-box">
+          <img src="../img/industry-six-bg.png" class="industry-bg-img" />
+          <div class="industry-content-box">
+            <p class="industry-content-title">工业／制造</p>
+            <p class="industry-content-text">工业制造是国家的支柱产业之一、近年随着“中国制造”的升级发展，人才的竞争日趋激烈，针对不同的专业人才需求提供高效实时的背景核实方案，助力企业招聘决策，规避用工风险同时快速纳入贤才。</p>
+          </div>
+        </div>
+      </div>
+      <div class="industry-bg-list">
+        <div class="industry-img-box">
+          <img src="../img/industry-seven-bg.png" class="industry-bg-img" />
+          <div class="industry-content-box">
+            <p class="industry-content-title">劳务派遣／任务外包</p>
+            <p class="industry-content-text">近年劳务派遣、任务外包人口呈快速增长趋势，用工单位或企业的需求标准也将逐渐提高。针对不同平台不同专业的人才，我们均可为您提供匹配的背景核查方案。</p>
+          </div>
+        </div>
+        <div class="industry-img-box">
+          <img src="../img/industry-eight-bg.png" class="industry-bg-img" />
+          <div class="industry-content-box">
+            <p class="industry-content-title">房地产/建筑设计</p>
+            <p class="industry-content-text">房地产/建筑设计的中高端人才薪酬水平较高，且一般会授权独立负责项目，招错一个人的成本是高昂的，而中低端岗位的需求巨大且流动性强，不同的岗位执行针对性的背景核实方案，对招到对的人和保持团队稳定性非常重要。</p>
+          </div>
+        </div>
+        <div class="industry-img-box">
+          <img src="../img/industry-nine-bg.png" class="industry-bg-img" />
+          <div class="industry-content-box">
+            <p class="industry-content-title">其它行业</p>
+            <p class="industry-content-text">各行各业，提高用人标准，招到“对的”人，促进企业更好发展和规避企业风险是企业永恒不变的话题， 反之，招错一个人的代价往往是很大的。针对各行各业和不同的岗位，我们出具与之匹配的背景核实方案，助力企业做好人才风控。</p>
+          </div>
+        </div>
+      </div>
     </div>
     <div class="home-partner">
       <p class="home-partner-title">部分合作伙伴</p>
@@ -180,13 +249,62 @@
     }
     .home-industry{
       width: 100%;
-      height: 1086px;
+      padding-bottom: 90px;
       background: rgba(243, 247, 250, 1);
-      text-align: center;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
       .home-industry-title{
         color: rgba(51, 51, 51, 1);
         font-size: 36px;
         padding: 70px 0 50px 0;
+      }
+      .industry-bg-list{
+        display: flex;
+        flex-direction: row;
+        width: 1200px;
+      }
+      .industry-bg-list + .industry-bg-list{
+        margin-top: 18px;
+      }
+      .industry-img-box + .industry-img-box{
+        margin-left: 18px;
+      }
+      .industry-img-box{
+        width: 388px;
+        height: 260px;
+        position: relative;
+      }
+      .industry-img-box:hover{
+        .industry-content-box{
+          width: 388px;
+          height: 260px;
+          padding: 30px;
+          transition: all 0.5s ease-in;
+        }
+      }
+      .industry-content-box{
+        width: 0;
+        height: 0;
+        position: absolute;
+        text-align: center;
+        background: #fff;
+        overflow: hidden;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        top: 0;
+        left: 0;
+      }
+      .industry-content-title{
+        font-size: 28px;
+        color: #333;
+      }
+      .industry-content-text{
+        font-size: 14px;
+        line-height: 24px;
+        color: #666;
+        margin-top: 10px;
       }
     }
     .home-partner{

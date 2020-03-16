@@ -10,7 +10,7 @@
       <div class="about-content-list">
         <p class="about-title">我们是谁？</p>
         <div class="about-content-box">
-          <img src="../img/about-us-logo.png" class="about-us-img">
+          <img src="../img/about-us-bg.png" class="about-us-img">
           <div class="content-box-right">
             <p class="about-text">杭州数脉科技有限公司成立于2016年12月，公司旗下产品职兔背调，是大数据与职业征信相结合的创新型人力资源职业背景调查平台，职兔背调总部位于杭州，在上海、武汉等地设有分支机构，迄今为止已经服务近5000家企业及10万名候选人。</p>
             <p class="about-text">职兔背调核心团队主要来自阿里、华为的技术精英和人力资源机构资深人士等，公司坚持客户第一的服务理念，不断完善产品，提升服务质量，致力于为企业人力资源风控保驾护航。</p>
@@ -79,12 +79,8 @@
   .about-container {
     background: #f5f5f5;
     min-width: 1200px;
-    .about-header{
-      height: 440px;
-    }
     .about-header-img{
       width: 100%;
-      height: 440px;
     }
     .about-content-list {
       display: flex;
@@ -114,7 +110,6 @@
     }
     .about-us-img{
       width: 410px;
-      height: 360px;
     }
     .about-culture-img{
       width: 749px;

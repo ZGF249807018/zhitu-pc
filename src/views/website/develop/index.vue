@@ -4,7 +4,7 @@
     </baidu-map> -->
     <Header :navPath="navPath"></Header>
     <div class="develop-header">
-      <img src="../img/product-bg.png" class="develop-header-img">
+      <img src="../img/develop-bg.png" class="develop-header-img">
     </div>
     <div class="develop-content">
       <el-tabs v-model="activeName" @tab-click="handleClick">
@@ -147,10 +147,20 @@
     created() {
     },
     mounted() {
+      this.activeName = this.$route.query.activeName || 'first'
+    },
+    beforeRouteUpdate (to, from, next) {
+      if(to.query.activeName) {
+        this.activeName = to.query.activeName
+      }
+      next()
     },
     methods: {
       linkTo (path) {
         this.$router.push({path: path})
+      },
+      handleClick (tab, event) {
+        this.$router.push({path: 'develop', query: {activeName: tab.name}})
       }
     }
   }
@@ -159,12 +169,8 @@
   .develop-container {
     background: #f5f5f5;
     min-width: 1200px;
-    .develop-header{
-      height: 440px;
-    }
     .develop-header-img{
       width: 100%;
-      height: 440px;
     }
     .first-tab-container{
       display: flex;

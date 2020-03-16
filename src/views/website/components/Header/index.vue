@@ -12,7 +12,7 @@
       </ul>
       <div class="header-phone">
         <img src="../../img/header-phone.png" class="header-phone-icon">
-        <p class="header-phone-number">0571-59020021</p>
+        <p class="header-phone-number">0571-89020021</p>
       </div>
       <div class="header-btn-list">
         <div class="header-login-btn" @click="linkTo('/login')">登录</div>
@@ -68,8 +68,8 @@
       padding-top: 14px;
       // background: url('../../img/header-bg.png') no-repeat;
       .header-logo{
-        width: 175px;
-        height: 72px;
+        width: 188px;
+        height: 48px;
       }
       .header-ul{
         display: flex;
@@ -79,6 +79,7 @@
         font-size: 16px;
         .header-li{
           padding-bottom: 8px;
+          cursor: pointer;
         }
         .header-li + .header-li{
           margin-left: 30px;

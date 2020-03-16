@@ -43,8 +43,8 @@
       justify-content: space-between;
       align-items: center;
       .header-logo-img{
-        width: 175px;
-        height: 72px;
+        width: 188px;
+        height: 48px;
       }
       .menu-title{
         color: #fff;

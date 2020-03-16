@@ -177,11 +177,21 @@
     },
     created() {
     },
+    beforeRouteUpdate (to, from, next) {
+      if(to.query.activeName) {
+        this.activeName = to.query.activeName
+      }
+      next()
+    },
     mounted() {
+      this.activeName = this.$route.query.activeName || 'first'
     },
     methods: {
       linkTo (path) {
         this.$router.push({path: path})
+      },
+      handleClick (tab, event) {
+        this.$router.push({path: 'product', query: {activeName: tab.name}})
       }
     }
   }
@@ -190,12 +200,8 @@
   .product-container {
     background: #f5f5f5;
     min-width: 1200px;
-    .product-header{
-      height: 440px;
-    }
     .product-header-img{
       width: 100%;
-      height: 440px;
     }
     .first-tab-container{
       .package-content{
@@ -219,6 +225,9 @@
           border-radius: 4px;
           box-shadow: 0px 0px 16px rgba(7,115,255,0.4);
           position: relative;
+        }
+        .package-item:hover{
+          box-shadow: 0px 0px 32px rgba(7,115,255,0.4);
         }
         .package-item + .package-item{
           margin-left: 30px;
